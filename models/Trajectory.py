@@ -1,7 +1,6 @@
-from dataclasses import dataclass
-
-@dataclass
-class Trajectory:
-    material_point: object
-    x1: float
-    x2: float
+class Tracectory:
+    x_tr_points=[]
+    y_tr_points=[]
+    def __init__(self, x_tr_points, y_tr_points):
+        self.x_tr_points = x_tr_points
+        self.y_tr_points = y_tr_points

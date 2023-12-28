@@ -1,5 +1,8 @@
-from dataclasses import dataclass
-
-@dataclass
-class MaterialBody:
-    material_points = list
+class Material_body:
+    rx = None
+    ry = None
+    ang = None
+    def __init__(self, rx, ry, ang):
+        self.rx = rx
+        self.ry = ry
+        self.ang = ang
