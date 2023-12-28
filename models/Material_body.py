@@ -1,5 +1,5 @@
 from dataclasses import dataclass
 
 @dataclass
-class Material_Body:
+class MaterialBody:
     material_points = list
