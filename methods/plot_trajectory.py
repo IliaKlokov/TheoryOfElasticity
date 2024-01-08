@@ -1,1 +1,4 @@
-#построить график траектории (есть 2 массива с у и х)
+import matplotlib.pyplot as plt
+def plottr(x,y):
+    plt.plot(x,y)
+    plt.show()
