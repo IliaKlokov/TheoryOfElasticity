@@ -1,11 +1,13 @@
-from models import materialBody
-from methods import rungk
-import math
+class Tracectory:
+    x_tr_points=[]
+    y_tr_points=[]
 
-class trajectory:
-    x1 = None
-    x2 = None
-    def __init__(self, md, t):
-        for i in range(len(md.points)):
-            self.x1 = rungk(-math.exp(t)*md.points.rx)
-            self.x2 = rungk(math.log(t)*md.points.rx)
+    def __init__(self, x_tr_points, y_tr_points):
+        self.x_tr_points = x_tr_points
+        self.y_tr_points = y_tr_points
+    def __init__(self):
+        self.x_tr_points = []
+        self.y_tr_points = []
+    def add (self,x,y):
+        self.x_tr_points.append(x)
+        self.y_tr_points.append(y)

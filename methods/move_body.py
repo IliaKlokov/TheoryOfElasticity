@@ -1,10 +1,8 @@
 from models.Trajectory import Tracectory
-from models.Stream_line import Stream_line
 from methods.runge_kutta import rungk
 def move(t0, t, n, x0, y0):
     h=t/n
     tr = Tracectory()
-    #str = Stream_line()
     prx=x0
     pry=y0
     for i in range(n):
