@@ -7,7 +7,7 @@ def move(t0, t, n, x0, y0):
     pry=y0
     for i in range(n):
         x,y=rungk(t0+h*i, h, prx, pry)
-        print(x, y)
+        #print(x, y)
         tr.add(x,y)
         prx=x
         pry=y
