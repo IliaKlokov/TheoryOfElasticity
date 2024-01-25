@@ -8,4 +8,3 @@ def plottr(x,y):
     plt.ylabel('x2')
     plt.title('Траектория')
     plt.grid()
-    plt.show()
